@@ -1,0 +1,14 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 7) Examples
+  tut-content: 
+    - text-bold-200%: Examples
+    - container-125%:
+        - text: "[better-html.com](http://better-html.com)"
+        - This website is written in BetterHTML (source code coming shortly).
+        - text: "[kgarber.com](http://kgarber.com)"
+        - You can write a person website with BetterHTML (source code coming shortly).
+        

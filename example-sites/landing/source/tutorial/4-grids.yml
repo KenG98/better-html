@@ -1,0 +1,83 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 4) Grids
+  tut-content: 
+    - text-bold-200%: Grids
+    - >
+        One of the best features of BetterHTML is the grid system. Grids help you get the
+        perfect layout for your page and make it mobile-friendly. Many HTML frameworks
+        have grids, but this one is especially easy to use.
+    - code: |
+        - row: 
+          - Column 1
+          - Column 2
+          - Column 3
+    - "On desktops, you'll see three vertical columns:"
+    - $$ template tutorial-box:
+        content:
+          - row-centered-nonresponsive: 
+              - Column 1
+              - Column 2
+              - Column 3
+    - "But on mobile, the columns will stack so that they're readable:"
+    - $$ template tutorial-box:
+        content:
+          - container-centered:
+            - Column 1
+            - Column 2
+            - Column 3
+    - >
+        If you don't want your columns to stack on mobile, use the "row-nonresponsive"
+        option on the row element.
+    - >
+        Use a "column" element to put multiple elements in each column. You can give
+        your columns attributes, and you can specify different widths for them.
+    - code: |
+        - row-nonresponsive:
+          - column (width 1/3) (background-color pink):
+            - container (padding 10px):
+              - This column is 1/3 width.
+              - It has multiple elements.
+              - img (src /beach.jpg)
+          - column (width 2/3) (background-color lightblue):
+            - container (padding 10px):
+              - This one has a width of 2/3
+              - It doesn't have much else.
+    - $$ template tutorial-box:
+        content:
+          - row-nonresponsive:
+            - column (width 1/3) (background-color pink):
+              - container (padding 10px):
+                - This column is 1/3 width.
+                - It has multiple elements.
+                - img (src /beach.jpg)
+            - column (width 2/3) (background-color lightblue):
+              - container (padding 10px):
+                - This one has a width of 2/3
+                - It doesn't have much else.
+    - >
+        You can also use a container with a "width" and "offset", and BetterHTML will use
+        the grid under the hood:
+    - code: |
+        - container (width 1/3) (offset 1/3):
+            background-color: pink
+            padding: 10px
+            border-radius: 10px
+            content:
+              This is a container with a width and offset.
+    - $$ template tutorial-box:
+        content:
+          - container (width 1/3) (offset 1/3):
+              background-color: pink
+              padding: 10px
+              border-radius: 10px
+              content:
+                This is a container with a width and offset.
+    - >
+        BetterHTML Grids are simple to use and let you make your website really attractive,
+        but the code we've written so far can still look better. Check out the 
+        [Styles](/tutorial/5-styles.html) section to learn how to make your code look better.
+        

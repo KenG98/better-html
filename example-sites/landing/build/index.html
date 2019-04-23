@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BetterHTML</title>
+    <link rel="stylesheet" href="/site-resources/purecss/pure-min.css">
+    <link rel="stylesheet" href="/site-resources/purecss/grids-responsive-min.css">
+    <link rel="stylesheet" href="/site-resources/rainbow/github.css">
+    <link rel="stylesheet" href="/site-resources/betterhtml/bhtml.css">
+    <script src="/site-resources/betterhtml/bhtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .my-style {
+        font-size: 150%;
+        color: red;
+      }
+
+      .example-result {
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: #22C6F0;
+        border-style: solid;
+      }
+
+      .pink-box {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: pink;
+        font-size: 150%;
+      }
+
+      .button-style {
+        border-color: black;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="non-footer-content">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-6"></div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div style="padding:5px;"><span style="font-size:2em; font-weight:bold;" class="bhtml-text">BetterHTML</span><span style="padding-left:10px;padding-right:10px;"></span><a style="font-size:1.5em; font-style:italic; padding-left:20px;padding-right:20px; text-decoration:none; color:#A21A24;" href="/">Home</a><a style="font-size:1.5em; padding-left:20px;padding-right:20px; text-decoration:none;" href="/tutorial/1-install.html">Tutorial</a><a style="font-size:1.5em; padding-left:20px;padding-right:20px; text-decoration:none;" href="/about.html">About</a>
+            <div style="height:5px; background-color:#22C6F0;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1-6"></div>
+        <div class="pure-u-2-3">
+          <div style="padding-left:10px;padding-right:10px;">
+            <div style="font-style:italic; text-align:center;" class="bhtml-text">Making a beautiful, responsive, static website should be easy, fast, and fun.
+            </div><br />
+            <div style="font-weight:bold; font-size:1.5em;" class="bhtml-text">What is BetterHTML?</div>
+            <div style="font-size:1.2em;" class="bhtml-text">BetterHTML is a super easy way to create <b>responsive, static websites</b> which look great on <b>mobile</b> and <b>desktop</b>. BetterHTML code is easier to write, easier to understand, and shorter. <br /> <br /> This website is written entirely in BetterHTML - explore it on your computer and your phone to see how it handles screen sizes, then install BetterHTML, read the tutorial, and create a great website of your own.
+            </div><br />
+            <div style="font-weight:bold; font-size:1.5em;" class="bhtml-text">Why BetterHTML?</div>
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-3">
+                <div style="font-weight:bold; font-size:20px;" class="bhtml-text">Looks Great</div>
+                <div style="padding-right:10px;" class="bhtml-text">This website is written in BetterHTML - resize the window to see how it is mobile friendly and responsive.
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                <div style="font-weight:bold; font-size:20px;" class="bhtml-text">Less Code</div>
+                <div style="padding-right:10px;" class="bhtml-text">Comparing BetterHTML to traditional HTML, the code for this page has <b>35% fewer lines</b> and <b>50% fewer characters</b>.
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                <div style="font-weight:bold; font-size:20px;" class="bhtml-text">Easy to Use</div>
+                <div style="padding-right:10px;" class="bhtml-text">Check out the code comparison below - BetterHTML is easier to understand and write than regular HTML.
+                </div>
+              </div>
+            </div>
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-6"></div>
+              <div class="pure-u-1 pure-u-md-2-3">
+                <div style="padding-left:5px;padding-right:5px;">
+                  <div style="font-weight:bold;" class="bhtml-text">BetterHTML</div><pre data-language="none"><code>- row &#40;align center&#41;:
+  - Column 1 text goes here!
+  - Column 2 goes here.
+  - Finally, column 3.
+</code></pre>
+                  <div style="font-weight:bold;" class="bhtml-text">Regular HTML</div><pre data-language="none"><code>&lt;div class=&quot;pure-g&quot; style=&quot;text-align:center;&quot;&gt;
+  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
+    &lt;p&gt;Column 1 text goes here!&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
+    &lt;p&gt;Column 2 goes here.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;pure-u-1 pure-u-md-1-3&quot;&gt;
+    &lt;p&gt;Finally, column 3.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                </div>
+              </div>
+            </div>
+            <div style="text-align:center;" class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div style="padding:10px;">
+                  <div class="bhtml-text">On desktop, you'll see three columns</div>
+                  <div style="text-align:center;" class="example-result pure-g">
+                    <div class="pure-u-1-3">
+                      <div class="bhtml-text">Column 1 text goes here!</div>
+                    </div>
+                    <div class="pure-u-1-3">
+                      <div class="bhtml-text">Column 2 goes here.</div>
+                    </div>
+                    <div class="pure-u-1-3">
+                      <div class="bhtml-text">Finally, column 3.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div style="padding:10px;">
+                  <div class="bhtml-text">On mobile, the columns stack to be more readable</div>
+                  <div class="example-result">
+                    <div style="padding:5px;">Column 1 text goes here!</div>
+                    <div style="padding:5px;">Column 2 goes here.</div>
+                    <div style="padding:5px;">Finally, column 3.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="font-size:1.5em; font-weight:bold;" class="bhtml-text">Getting Started</div>
+            <div style="font-style:italic; text-decoration:underline;" class="bhtml-text">Install BetterHTML</div>
+            <div style="padding-left:10px;" class="bhtml-text">BetterHTML is an NPM package. First install Node.js at <a href="nodejs.org">nodejs.org</a>. Then run `npm install betterhtml --global`.
+            </div>
+            <div style="font-style:italic; text-decoration:underline;" class="bhtml-text">Visit The Tutorial</div>
+            <div style="padding-left:10px;" class="bhtml-text">Read the official BetterHTML tutorial at <a href="/tutorial/1-install.html">better-html.com/tutorial/1-install.html</a>.
+            </div>
+            <div style="font-style:italic; text-decoration:underline;" class="bhtml-text">View Some Examples</div>
+            <div style="padding-left:10px;">
+              <div class="no-link-underline bhtml-text"><a href="/">better-html.com</a> - This website!</div>
+              <div class="no-link-underline bhtml-text"><a href="http://kgarber.com">kgarber.com</a> - A personal website.</div>
+            </div>
+            <div style="font-style:italic; text-decoration:underline;" class="bhtml-text">Get Involved</div>
+            <div style="padding-left:10px;">
+              <div class="no-link-underline bhtml-text"><a href="/">twitter.com/betterhtml</a> - Check out our twitter.
+              </div>
+              <div class="no-link-underline bhtml-text"><a href="/">github.com/keng98/betterhtml</a> - The open source project on GitHub.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content"><br />
+      <div style="background-color:#DDDDDD; font-size:85%;">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-6"></div>
+          <div class="pure-u-1 pure-u-md-2-3">
+            <div style="padding:5px;">
+              <div class="bhtml-text"><a href="/">Home</a> &nbsp; <a href="/tutorial.html">Tutorial</a> &nbsp; <a href="/about.html">About</a>
+              </div>
+              <div class="bhtml-text"><a href="/license">Open Source and Licensing</a> &nbsp; <a href="kgarber.com/contact">Contact</a> &nbsp; <a href="https://www.facebook.com/betterhtml/">Facebook</a> &nbsp; <a href="twitter.com/betterhtml">Twitter</a>
+              </div>
+              <div class="bhtml-text">Created by Ken Garber. &nbsp; <a href="kgarber.com">kgarber.com</a>. &nbsp; <a href="github.com/keng98">github.com/keng98</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/site-resources/rainbow/rainbow.js"></script>
+    <script src="/site-resources/rainbow/generic.js"></script>
+    <script src="/site-resources/rainbow/html.js"></script>
+  </body>
+
+</html>

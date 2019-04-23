@@ -1,0 +1,15 @@
+---
+type: page
+page-name: Tutorial
+---
+
+$$ template basic-page:
+  page-name: Tutorial
+  content:
+    - nothing...
+    # - container-nonresponsive (width 2/3) (offset 1/6) (horizontal-padding 10px):
+    #   - row:
+    #     - column (width 1/4):
+    #       - $$ template tutorial-menu
+    #     - column (width 3/4):
+    #       - stuff...

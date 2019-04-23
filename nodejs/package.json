@@ -1,0 +1,27 @@
+{
+  "name": "bhtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bhcli.js",
+  "bin": {
+    "bhtml": "./bhcli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken Garber",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^2.1.5",
+    "commander": "^2.19.0",
+    "express": "^4.16.4",
+    "metalsmith": "^2.3.0",
+    "portfinder": "^1.0.20",
+    "pretty": "^2.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "brfs": "^2.0.2",
+    "browserify": "^16.2.3"
+  }
+}

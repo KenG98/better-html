@@ -1,0 +1,14 @@
+---
+type: template
+---
+
+basic-page:
+  - $$ template header
+  - $$ param content
+  - $$ template footer
+
+pink-box:
+  - container (padding 10px):
+      - container (background-color pink) (padding 10px) (border-radius 10px):
+          - $$ param content
+          

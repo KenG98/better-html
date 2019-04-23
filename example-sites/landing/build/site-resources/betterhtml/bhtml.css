@@ -1,0 +1,65 @@
+/* START: make sticky footer */
+
+/*html, body {
+  height: 100vh;
+}*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.non-footer-content {
+  flex: 1 0 auto;
+}
+.footer-content {
+  flex-shrink: 0;
+}
+/* END: make sticky footer */
+
+.bhtml-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pure-button {
+  text-decoration: none;
+}
+
+a {
+  color: #545454;
+}
+
+.no-link-underline a {
+  text-decoration: none;
+}
+
+.no-link-underline {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 48em) {
+  .desktoponly {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .mobileonly {
+    display: none;
+  }
+}
+
+@keyframes bhtml-fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes bhtml-fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.bhtml-fade-in-fade-out-class {
+  /*display: none;*/
+}
+

@@ -1,0 +1,92 @@
+---
+type: template
+---
+
+menu-link:
+  - link (style no-link-underline): 
+      $$ if param chapter-name == param which-chapter:
+        color: $$ param dark-maroon
+      address: $$ param chapter-link
+      text: $$ param chapter-name
+  - br: 2
+
+tutorial-menu:
+  - br
+  - $$ template menu-link:
+      chapter-name: 1) Installing
+      chapter-link: /tutorial/1-install.html
+  - $$ template menu-link:
+      chapter-name: 2) First Website
+      chapter-link: /tutorial/2-first-website.html
+  - $$ template menu-link:
+      chapter-name: 3) Elements
+      chapter-link: /tutorial/3-elements.html
+  - $$ template menu-link:
+      chapter-name: 4) Grids
+      chapter-link: /tutorial/4-grids.html
+  - $$ template menu-link:
+      chapter-name: 5) Styles
+      chapter-link: /tutorial/5-styles.html
+  - $$ template menu-link:
+      chapter-name: 6) Templating
+      chapter-link: /tutorial/6-templating.html
+  - $$ template menu-link:
+      chapter-name: 7) Examples
+      chapter-link: /tutorial/7-examples.html
+  - $$ template menu-link:
+      chapter-name: 8) Going Forward
+      chapter-link: /tutorial/8-going-forward.html
+
+tutorial-page:
+  $$ template basic-page:
+    page-name: Tutorial
+    content:
+      - container-nonresponsive (width 2/3) (offset 1/6) (horizontal-padding 10px):
+        - row:
+          - column (width 1/4):
+            - container (padding 5px):
+              - container (padding 5px):
+                  border-width: 2px
+                  border-color: $$ param light-blue
+                  border-style: solid
+                  border-radius: 5px
+                  content:
+                    - $$ template tutorial-menu
+          - column (width 3/4):
+            - container (padding 5px):
+              - $$ param tut-content
+
+tutorial-box:
+  - container:
+      border-color: black
+      border-radius: 10px
+      border-width: 2px
+      border-style: solid
+      padding: 5px
+      content:
+        $$ param content
+
+button:
+  - container-centered:
+      style: button-style
+      background-color: $$ param color
+      content:
+        - text: $$ param text
+
+danger-button:
+  - container:
+      $$ if param size == big:
+        font-size: 150%
+      $$ if param size == normal:
+        font-size: 100%
+      $$ if param size == small:
+        font-size: 75%
+      content:
+        - $$ if param is-dangerous == yes:
+            then:
+              - $$ template button:
+                  color: pink
+            else:
+              - $$ template button:
+                  color: lightgreen
+

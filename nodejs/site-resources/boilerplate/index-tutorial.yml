@@ -1,0 +1,17 @@
+---
+type: page
+page-name: Index
+---
+
+- text-centered (style my-style): 
+    content: Your fresh new BHTML website.
+- text-150%-centered (color blue): Change some stuff around, see what happens.
+- row-centered:
+    - $$ template pink-box:
+        - You can use rows and columns in your website.
+    - $$ template pink-box:
+        - They're responsive and stack on mobile.
+    - $$ template pink-box:
+        - |
+          Visit the tutorial if you need help:<br />
+          [better-html.com/tutorial](better-html.com/tutorial)

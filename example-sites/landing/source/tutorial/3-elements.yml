@@ -1,0 +1,102 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 3) Elements
+  tut-content: 
+    - text-bold-200%: Elements
+    - In your index.yml file you'll notice the line
+    - code: "- Your fresh new BHTML website."
+    - This is short for
+    - code: "- text: Your fresh new BHTML website."
+    - >
+        In BetterHTML, everything that shows up on your page is an element. The above
+        element is a "text" element. Elements have "attributes", try this:
+    - code: "- text (color blue) (font-size 200%): Hello, world."
+    - $$ template tutorial-box:
+        content:
+          - text (color blue) (font-size 200%): Hello, world.
+    - >
+        You'll see that your text is now blue and two times the size of normal text.
+        BetterHTML also lets you use "options" - an even more convenient way of 
+        customizing your elements. Place your options after the element name using
+        dashes:
+    - code: "- text-200%-italic (color blue): Hello, world."
+    - $$ template tutorial-box:
+        content:
+          - text-200%-italic (color blue): Hello, world.
+    - >
+        Sometimes you have too many options to include in one line. You can make your
+        code more readable by breaking it into multiple lines:
+    - code: |
+        - text-italic:
+            font-size: 200%
+            color: blue
+            content: Hello, world.
+    - >
+        And if your text is too long, you can use a special character ">" or "|" to 
+        make it span over multiple lines:
+    - code: |
+        - text: >
+            This text is too long to fit
+            on a single line, so I'll
+            break it up into multiple
+            lines, but it'll appear normal.
+    - "There are several different elements you can use, like an image:"
+    - code: "- img (src /beach.jpg)"
+    - $$ template tutorial-box:
+        content:
+          - img (src /beach.jpg)
+    - >
+        You can also create code blocks like this one below, which shows the code to
+        create a code block element:
+    - code: |
+        - code: |
+            This is a code block!
+            Type some code.
+    - results in...
+    - $$ template tutorial-box:
+        content:
+          - code: |
+              This is a code block!
+              Type some code.
+    - >
+        A really useful element is the "container" - it acts like an HTML "div" or
+        "span", and lets you group together other elements. Here are two examples
+        of containers. The second one is easier to read because we split up the 
+        options and attributes into new lines.
+    - code: |
+        - container-centered (background-color pink) (border-radius 10px) (padding 10px):
+            - text-bold: Bold text.
+            - text-150%-italic: Large italic text.
+        - hr
+        - container:
+            background-color: yellow
+            border-radius: 10px
+            padding: 10px
+            option: centered
+            content:
+              - text-bold: Bold text.
+              - text-150%-italic: Large italic text.
+    - $$ template tutorial-box:
+        content:
+          - container (width 1/2) (offset 1/4):
+            - container-centered (background-color pink) (border-radius 10px) (padding 10px):
+                - text-bold: Bold text.
+                - text-150%-italic: Large italic text.
+            - hr
+            - container:
+                background-color: yellow
+                border-radius: 10px
+                padding: 10px
+                option: centered
+                content:
+                  - text-bold: Bold text.
+                  - text-150%-italic: Large italic text.
+    - >
+        You can use the "hr" element from above to create a "horizontal rule", and
+        the "br" element to add a line break.
+    - >
+        Now that you know the building blocks of BetterHTML, you're ready to learn
+        [the grid system](/tutorial/4-grids.html).

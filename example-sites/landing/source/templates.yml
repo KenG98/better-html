@@ -1,0 +1,60 @@
+---
+type: template
+---
+
+header-button:
+  link-span-150%:
+    href: $$ param link
+    content: $$ param name
+    horizontal-padding: 20px
+    text-decoration: none
+    $$ if param page-name == param name:
+      color: $$ param dark-maroon
+      option: italic
+
+header:
+  - container (width 2/3) (offset 1/6) (padding 5px):
+    - text-span-200%-bold: BetterHTML
+    - container-span (horizontal-padding 10px)
+    - $$ template header-button:
+        link: /
+        name: Home
+    - $$ template header-button:
+        link: /tutorial/1-install.html
+        name: Tutorial
+    - $$ template header-button:
+        link: /about.html
+        name: About
+    - container:
+        content: ""
+        height: 5px
+        background-color: $$ param light-blue
+
+footer:
+  - container:
+      background-color: "#DDDDDD"
+      font-size: 85%
+      content:
+      - container (width 2/3) (offset 1/6) (padding 5px):
+        - text: >
+            [Home](/) &nbsp;
+            [Tutorial](/tutorial.html) &nbsp;
+            [About](/about.html)
+        - text: >
+            [Open Source and Licensing](/license) &nbsp;
+            [Contact](kgarber.com/contact) &nbsp;
+            [Facebook](https://www.facebook.com/betterhtml/) &nbsp;
+            [Twitter](twitter.com/betterhtml)
+        - text: >
+            Created by Ken Garber. &nbsp;
+            [kgarber.com](kgarber.com). &nbsp;
+            [github.com/keng98](github.com/keng98).
+
+
+basic-page:
+  - container (class non-footer-content):
+    - $$ template header
+    - $$ param content
+  - container (class footer-content):
+    - br
+    - $$ template footer

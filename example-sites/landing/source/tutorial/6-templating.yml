@@ -1,0 +1,122 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 6) Templating
+  tut-content: 
+    - text-bold-200%: Templating
+    - >
+        Templating in BetterHTML is similar to other frameworks and lets you re-use
+        your code and add useful logic.
+    - >
+        Here's an example: at the top of every page on this site, you see the navbar
+        with the "Home", "Tutorial", and "About" buttons. Instead of copying and pasting
+        the navbar everywhere, you can create a template with a navbar, and insert the
+        template into every page.
+    - >
+        Here's an example: you want to create a bunch of buttons with different text and
+        colors. Change the following three files:
+    - styles.yml
+    - code: |
+        button-style:
+          border-color: black
+          border-radius: 10px
+          border-width: 2px
+          border-style: solid
+          padding: 5px
+    - templates.yml
+    - code: |
+        button:
+          - container-centered:
+              style: button-style
+              background-color: $$ param color
+              content:
+                - text: $$ param text
+    - index.yml
+    - code: |
+        - $$ template button:
+            text: Stop
+            color: pink
+        - br
+        - $$ template button:
+            text: Slow
+            color: yellow
+        - br
+        - $$ template button:
+            text: Go
+            color: lightgreen
+    - container-nonresponsive (width 1/3) (offset 1/3):
+      - $$ template button:
+          text: Stop
+          color: pink
+      - br
+      - $$ template button:
+          text: Slow
+          color: yellow
+      - br
+      - $$ template button:
+          text: Go
+          color: lightgreen
+    - >
+        You can also include "if" statements in your templates. Let's create a few buttons
+        with conditional properties. Add the following lines to your files:
+    - templates.yml
+    - code: |
+        danger-button:
+          - container:
+              $$ if param size == big:
+                font-size: 150%
+              $$ if param size == normal:
+                font-size: 100%
+              $$ if param size == small:
+                font-size: 75%
+              content:
+                - $$ if param is-dangerous == yes:
+                    then:
+                      - $$ template button:
+                          color: pink
+                    else:
+                      - $$ template button:
+                          color: lightgreen
+    - index.yml
+    - code: |
+        - $$ template danger-button:
+            is-dangerous: yes
+            size: big
+            text: Big Scary Button!
+        - br
+        - $$ template danger-button:
+            is-dangerous: yes
+            size: small
+            text: Small Dangerous Button.
+        - br
+        - $$ template danger-button:
+            size: normal
+            is-dangerous: no
+            text: Normal Safe Button.
+    - container-nonresponsive (width 1/3) (offset 1/3):
+      - $$ template danger-button:
+          is-dangerous: yes
+          size: big
+          text: Big Scary Button!
+      - br
+      - $$ template danger-button:
+          is-dangerous: yes
+          size: small
+          text: Small Dangerous Button.
+      - br
+      - $$ template danger-button:
+          size: normal
+          is-dangerous: no
+          text: Normal Safe Button.
+    - >
+        As you can see, you can add conditional properties depending on template
+        values (set the font size depending on the "size" property), and you can
+        conditionally render elements (if it's a dangerous element, render a red
+        button, otherwise render a green button).
+    - >
+        Note that in the example directly above we could use the template "button"
+        just specifying a color, without giving it text. This is because parameters
+        are passed down to child templates when rendering a template within a template.
+        

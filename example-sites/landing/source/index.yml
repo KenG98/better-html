@@ -1,0 +1,94 @@
+---
+type: page
+page-name: Index
+---
+
+$$ template basic-page:
+  page-name: Home
+  content:
+    - container-nonresponsive (width 2/3) (offset 1/6) (horizontal-padding 10px):
+        - text-italic-center: >
+            Making a beautiful, responsive, static website should be easy, fast, and fun.
+        - br
+        - text-bold-150%: What is BetterHTML?
+        - text-120%: >
+            BetterHTML is a super easy way to create <b>responsive, static websites</b> which 
+            look great on <b>mobile</b> and <b>desktop</b>. BetterHTML code is easier to write, 
+            easier to understand, and shorter.
+            <br /> <br />
+            This website is written entirely in BetterHTML - explore it on your 
+            computer and your phone to see how it handles screen sizes, then install 
+            BetterHTML, read the tutorial, and create a great website of your own.
+        - br
+        - text-bold-150%: Why BetterHTML?
+        - row:
+          - column:
+            - text-bold-20px: Looks Great
+            - text (padding-right 10px): >
+                This website is written in BetterHTML - resize the window to see how
+                it is mobile friendly and responsive.
+          - column:
+            - text-bold-20px: Less Code
+            - text (padding-right 10px): >
+                Comparing BetterHTML to traditional HTML, the code for this page has 
+                <b>35% fewer lines</b> and <b>50% fewer characters</b>.
+          - column:
+            - text-bold-20px: Easy to Use
+            - text (padding-right 10px): >
+                Check out the code comparison below - BetterHTML is easier to understand
+                and write than regular HTML.
+        - container (offset 1-6) (width 2-3) (horizontal-padding 5px):
+          - text-bold: BetterHTML
+          - code: |
+              - row (align center):
+                - Column 1 text goes here!
+                - Column 2 goes here.
+                - Finally, column 3.
+          - text-bold: Regular HTML
+          - code: |
+              <div class="pure-g" style="text-align:center;">
+                <div class="pure-u-1 pure-u-md-1-3">
+                  <p>Column 1 text goes here!</p>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                  <p>Column 2 goes here.</p>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                  <p>Finally, column 3.</p>
+                </div>
+              </div>
+        - row (align center):
+          - container (padding 10px):
+            - On desktop, you'll see three columns
+            - row-nonresponsive (align center) (style example-result):
+                - Column 1 text goes here!
+                - Column 2 goes here.
+                - Finally, column 3.
+          - container (padding 10px):
+            - On mobile, the columns stack to be more readable
+            - container (style example-result):
+              - container (padding 5px): Column 1 text goes here!
+              - container (padding 5px): Column 2 goes here.
+              - container (padding 5px): Finally, column 3.
+        - text-150%-bold: Getting Started
+        - text-italic-underline: Install BetterHTML
+        - text (padding-left 10px): >
+            BetterHTML is an NPM package. 
+            First install Node.js at [nodejs.org](nodejs.org). 
+            Then run `npm install betterhtml --global`.
+        - text-italic-underline: Visit The Tutorial
+        - text (padding-left 10px): >
+            Read the official BetterHTML tutorial at 
+            [better-html.com/tutorial/1-install.html](/tutorial/1-install.html).
+        - text-italic-underline: View Some Examples
+        - container (padding-left 10px):
+          - text (style no-link-underline): "[better-html.com](/) - This website!"
+          - text (style no-link-underline): "[kgarber.com](http://kgarber.com) - A personal website."
+          # - text (style no-link-underline): "[ronandklaudia.com](ronandklaudia.com) - Athlete home page."
+        - text-italic-underline: Get Involved
+        - container (left-padding 10px):
+          - text (style no-link-underline): >
+              [twitter.com/betterhtml](/) - Check out our twitter.
+          - text (style no-link-underline): >
+              [github.com/keng98/betterhtml](/) - The open source project on GitHub.
+        

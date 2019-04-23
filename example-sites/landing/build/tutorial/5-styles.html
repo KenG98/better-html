@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BetterHTML</title>
+    <link rel="stylesheet" href="/site-resources/purecss/pure-min.css">
+    <link rel="stylesheet" href="/site-resources/purecss/grids-responsive-min.css">
+    <link rel="stylesheet" href="/site-resources/rainbow/github.css">
+    <link rel="stylesheet" href="/site-resources/betterhtml/bhtml.css">
+    <script src="/site-resources/betterhtml/bhtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .my-style {
+        font-size: 150%;
+        color: red;
+      }
+
+      .example-result {
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: #22C6F0;
+        border-style: solid;
+      }
+
+      .pink-box {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: pink;
+        font-size: 150%;
+      }
+
+      .button-style {
+        border-color: black;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="non-footer-content">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-6"></div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div style="padding:5px;"><span style="font-size:2em; font-weight:bold;" class="bhtml-text">BetterHTML</span><span style="padding-left:10px;padding-right:10px;"></span><a style="font-size:1.5em; padding-left:20px;padding-right:20px; text-decoration:none;" href="/">Home</a><a style="font-size:1.5em; font-style:italic; padding-left:20px;padding-right:20px; text-decoration:none; color:#A21A24;" href="/tutorial/1-install.html">Tutorial</a><a style="font-size:1.5em; padding-left:20px;padding-right:20px; text-decoration:none;" href="/about.html">About</a>
+            <div style="height:5px; background-color:#22C6F0;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1-6"></div>
+        <div class="pure-u-2-3">
+          <div style="padding-left:10px;padding-right:10px;">
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-4">
+                <div style="padding:5px;">
+                  <div style="border-width:2px; border-color:#22C6F0; border-style:solid; border-radius:5px; padding:5px;"><br /><a href="/tutorial/1-install.html" class="no-link-underline">1) Installing</a><br /><br /><a href="/tutorial/2-first-website.html" class="no-link-underline">2) First Website</a><br /><br /><a href="/tutorial/3-elements.html" class="no-link-underline">3) Elements</a><br /><br /><a href="/tutorial/4-grids.html" class="no-link-underline">4) Grids</a><br /><br /><a style="color:#A21A24;" href="/tutorial/5-styles.html" class="no-link-underline">5) Styles</a><br /><br /><a href="/tutorial/6-templating.html" class="no-link-underline">6) Templating</a><br /><br /><a href="/tutorial/7-examples.html" class="no-link-underline">7) Examples</a><br /><br /><a href="/tutorial/8-going-forward.html" class="no-link-underline">8) Going Forward</a><br /><br /></div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-3-4">
+                <div style="padding:5px;">
+                  <div style="font-weight:bold; font-size:2em;" class="bhtml-text">Styles</div>
+                  <div class="bhtml-text">We can use styles to write cleaner code and re-use code effectively. If multiple elements re-use the same properties, you can put those properties into the "style.yml" file, then re-use that style in your code.
+                  </div><pre data-language="none"><code>pink-box:
+  padding: 10px
+  border-radius: 5px
+  background-color: pink
+  font-size: 150%
+</code></pre>
+                  <div class="bhtml-text">Then here's your index.yml file:</div><pre data-language="none"><code>- row:
+  - container &#40;padding 10px&#41;:
+    - container &#40;style pink-box&#41;:
+        - Here&#039;s a container with some properties.
+  - container &#40;padding 10px&#41;:
+    - container &#40;style pink-box&#41;:
+        - And another very similar container.
+</code></pre>
+                  <div style="border-color:black; border-radius:10px; border-width:2px; border-style:solid; padding:5px;">
+                    <div class="pure-g">
+                      <div class="pure-u-1 pure-u-md-1-2">
+                        <div style="padding:10px;">
+                          <div class="pink-box">
+                            <div class="bhtml-text">Here's a container with some properties.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pure-u-1 pure-u-md-1-2">
+                        <div style="padding:10px;">
+                          <div class="pink-box">
+                            <div class="bhtml-text">And another very similar container.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bhtml-text">Styles are a great way to make your code clear and make BetterHTML easy to use. Another great feature are templates. Head over to the <a href="/tutorial/6-templating.html">templating</a> section to learn about BetterHTML templates.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content"><br />
+      <div style="background-color:#DDDDDD; font-size:85%;">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-6"></div>
+          <div class="pure-u-1 pure-u-md-2-3">
+            <div style="padding:5px;">
+              <div class="bhtml-text"><a href="/">Home</a> &nbsp; <a href="/tutorial.html">Tutorial</a> &nbsp; <a href="/about.html">About</a>
+              </div>
+              <div class="bhtml-text"><a href="/license">Open Source and Licensing</a> &nbsp; <a href="kgarber.com/contact">Contact</a> &nbsp; <a href="https://www.facebook.com/betterhtml/">Facebook</a> &nbsp; <a href="twitter.com/betterhtml">Twitter</a>
+              </div>
+              <div class="bhtml-text">Created by Ken Garber. &nbsp; <a href="kgarber.com">kgarber.com</a>. &nbsp; <a href="github.com/keng98">github.com/keng98</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/site-resources/rainbow/rainbow.js"></script>
+    <script src="/site-resources/rainbow/generic.js"></script>
+    <script src="/site-resources/rainbow/html.js"></script>
+  </body>
+
+</html>

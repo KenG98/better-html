@@ -1,0 +1,46 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 2) First Website
+  tut-content: 
+    - text-bold-200%: Your First Website
+    - To create your first project, run
+    - code: bhtml init site-one
+    - >
+        This creates a folder "site-one" with your website files (a build and source folder,
+        as well as some basic code). Here's what it looks like:
+    - code: |
+        site-one
+        -- build
+        -- source
+        ---- index.yml
+        ---- parameters.yml
+        ---- settings.yml
+        ---- styles.yml
+        ---- templates.yml
+    - >
+        Now you'll want to view your website. From outside of the site-one folder, 
+        type these two commands:
+    - code: |
+        bhtml generate site-one
+        bhtml serve site-one
+    - >
+        The first command will generate an HTML website from your BetterHTML code, and the
+        second command will serve the website on your localhost so that you can view it.
+        Visit "localhost:8080" in your browser to view the website.
+    - >
+        The "index.yml" file contains the code for the home page of your website. To
+        update your site, change the file, save it, run the above two commands again, 
+        and refresh the page. 
+    - 'BetterHTML can also do the above for you automatically with the "watch" command:'
+    - code: bhtml watch site-one
+    - >
+        When bhtml is watching your project, you can simply change and save your file,
+        then refresh the page to see the updates.
+    - You run "watch" once and bhtml will continue re-generating your project until you quit it.
+    - >
+        Move on to the [Elements](/tutorial/3-elements.html) section to learn how to actually
+        code your first site.
+        

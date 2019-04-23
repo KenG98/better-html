@@ -1,0 +1,26 @@
+---
+type: style
+---
+
+my-style: 
+  font-size: 150%
+  color: red
+  
+example-result:
+  border-width: 2px
+  border-radius: 10px
+  border-color: $$ param light-blue
+  border-style: solid
+
+pink-box:
+  padding: 10px
+  border-radius: 5px
+  background-color: pink
+  font-size: 150%
+
+button-style:
+  border-color: black
+  border-radius: 10px
+  border-width: 2px
+  border-style: solid
+  padding: 5px

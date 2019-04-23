@@ -1,0 +1,41 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 5) Styles
+  tut-content: 
+    - text-bold-200%: Styles
+    - >
+        We can use styles to write cleaner code and re-use code effectively.
+        If multiple elements re-use the same properties, you can put those properties
+        into the "style.yml" file, then re-use that style in your code.
+    - code-unescaped: |
+        pink-box:
+          padding: 10px
+          border-radius: 5px
+          background-color: pink
+          font-size: 150%
+    - "Then here's your index.yml file:"
+    - code-unescaped: |
+        - row:
+          - container (padding 10px):
+            - container (style pink-box):
+                - Here's a container with some properties.
+          - container (padding 10px):
+            - container (style pink-box):
+                - And another very similar container.
+    - $$ template tutorial-box:
+        content:
+          - row:
+            - container (padding 10px):
+              - container (style pink-box):
+                  - Here's a container with some properties.
+            - container (padding 10px):
+              - container (style pink-box):
+                  - And another very similar container.
+    - >
+        Styles are a great way to make your code clear and make BetterHTML easy to use.
+        Another great feature are templates. Head over to the 
+        [templating](/tutorial/6-templating.html) section to learn about BetterHTML
+        templates.

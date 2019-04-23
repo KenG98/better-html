@@ -1,0 +1,48 @@
+---
+type: page
+page-name: About
+---
+
+$$ template basic-page:
+  page-name: About
+  content:
+    - container-nonresponsive (width 1/2) (offset 1/6) (horizontal-padding 10px):
+        - text-bold-150%: About BetterHTML
+        - text: >
+            BetterHTML was created out of frustration with the current ways of 
+            creating responsive web pages. HTML is verbose (angle brackets and 
+            closing tags), easy to mess up, and is low level - you need to describe 
+            explicitly how every part of your page looks.
+        - text: >
+            While modern responsive frameworks work well and take some of the pain 
+            away, they're still cumbersome to write with, and users still need to 
+            deal with HTML.
+        - text: >
+            BetterHTML compiles YAML markup, using PureCSS and our language 
+            specification to create a mobile friendly site for the user.
+        - text-bold-150%: Should You Use BetterHTML?
+        - text: >
+            BetterHTML is great for static websites - YAML, the markup language 
+            that it uses, is easy to write and read, giving you an enjoyable 
+            editing experience.
+        - text: >
+            It's also great if you need to write something quickly - it takes 
+            the labor and guesswork out of creating good looking and responsive 
+            sites.
+        - text: >
+            Use BetterHTML if you don't need extremely fine grained control and 
+            would rather have a desktop and mobile friendly website without the 
+            labor of the more complicated frameworks already out there.
+        - text-bold-150%: Active Development
+        - text: >
+            BetterHTML is under active development. Things are changing quickly 
+            and sometimes break backwards compatibility. It's safe to say that 
+            it is in an Alpha.
+        - text: >
+            We care about the tool and want our users to have an easy time learning 
+            and using it. Feel free to submit questions and possible bugs on 
+            Github, where a maintainer will get back to you quickly with help.
+        - text: >
+            Interested in contributing? Great! Instructions on how to do so are 
+            coming shortly. In the meantime, star the repository on Github 
+            [github.com/keng98/better-html](http://www.github.com/keng98/better-html).

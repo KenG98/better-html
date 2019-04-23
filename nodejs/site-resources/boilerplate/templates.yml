@@ -1,0 +1,8 @@
+---
+type: template
+---
+
+basic-page:
+  - $$ template header
+  - $$ param content
+  - $$ template footer

@@ -1,0 +1,28 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 8) Going Forward
+  tut-content: 
+    - text-bold-200%: Going Forward
+    - container-125%:
+      - >
+          Now you've seen how BetterHTML is better than plain old HTML, you know how to install
+          it, and you know how to use it. It's time to make your own website!
+      - >
+          BetterHTML is still a young project so you may encounter issues. If you have any
+          questions, feel free to post them on our Github
+          [github.com/keng98/better-html](http://github.com/keng98/better-html)
+      - >
+          If you would like to contribute, get in touch with us via the contact information
+          on the Github.
+
+    # - detailed writeup of all features, including elements, nitty gritty language details, etc
+    # - docs
+    # - ask questions on github
+    # - contributing
+    # - keep up to date / news
+    # - some of the above should go in an "about" page
+    # - need a "contributing" page
+    # - need a list of open source projects involved and licenses

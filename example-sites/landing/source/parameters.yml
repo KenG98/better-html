@@ -1,0 +1,12 @@
+---
+type: global-parameter
+---
+
+# colorscheme from
+# https://piktochart.com/blog/website-color-schemes/
+dark-blue: "#0D56D9"
+medium-blue: "#5792CF"
+light-blue: "#22C6F0"
+light-yellow: "#F2E68F"
+dark-red: "#FF0000"
+dark-maroon: "#A21A24"

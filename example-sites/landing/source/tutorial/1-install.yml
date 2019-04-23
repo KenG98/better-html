@@ -1,0 +1,15 @@
+---
+type: page
+---
+
+$$ template tutorial-page:
+  which-chapter: 1) Installing
+  tut-content: 
+    - text-bold-200%: Install BetterHTML
+    - Installing BetterHTML is easy. It's an NPM package, so first make sure you have Node.js installed. To do that, visit [nodejs.org](http://nodejs.org).
+    - Once you have Node.js on your machine, run the command.
+    - code: npm install bhtml --global
+    - To make sure everything worked, run the command to view the help menu.
+    - code: bhtml --help
+    - >
+        If that outputs a help menu, everything worked! You can move on to [Section 2: First Website](/tutorial/2-first-website.html).
