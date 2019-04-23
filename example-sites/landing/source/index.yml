@@ -6,7 +6,7 @@ page-name: Index
 $$ template basic-page:
   page-name: Home
   content:
-    - container-nonresponsive (width 2/3) (offset 1/6) (horizontal-padding 10px):
+    - container (width 2/3) (offset 1/6) (horizontal-padding 10px):
         - text-italic-center: >
             Making a beautiful, responsive, static website should be easy, fast, and fun.
         - br
@@ -87,8 +87,8 @@ $$ template basic-page:
           # - text (style no-link-underline): "[ronandklaudia.com](ronandklaudia.com) - Athlete home page."
         - text-italic-underline: Get Involved
         - container (left-padding 10px):
-          - text (style no-link-underline): >
-              [twitter.com/betterhtml](/) - Check out our twitter.
+          # - text (style no-link-underline): >
+          #     [twitter.com/betterhtml](/) - Check out our twitter.
           - text (style no-link-underline): >
               [github.com/keng98/betterhtml](/) - The open source project on GitHub.
         

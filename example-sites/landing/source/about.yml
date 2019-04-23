@@ -6,7 +6,7 @@ page-name: About
 $$ template basic-page:
   page-name: About
   content:
-    - container-nonresponsive (width 1/2) (offset 1/6) (horizontal-padding 10px):
+    - container (width 1/2) (offset 1/6) (horizontal-padding 10px):
         - text-bold-150%: About BetterHTML
         - text: >
             BetterHTML was created out of frustration with the current ways of 

@@ -12,7 +12,17 @@ header-button:
       color: $$ param dark-maroon
       option: italic
 
-header:
+header-button-mobile:
+  - link-100%:
+      href: $$ param link
+      content: $$ param name
+      horizontal-padding: 20px
+      text-decoration: none
+      $$ if param page-name == param name:
+        color: $$ param dark-maroon
+        option: italic  
+
+header-desktop:
   - container (width 2/3) (offset 1/6) (padding 5px):
     - text-span-200%-bold: BetterHTML
     - container-span (horizontal-padding 10px)
@@ -30,6 +40,30 @@ header:
         height: 5px
         background-color: $$ param light-blue
 
+header-mobile:
+  - container-centered (width 2/3) (offset 1/6) (padding 5px):
+    - text-150%-bold: BetterHTML
+    - row-nonresponsive:
+      - $$ template header-button-mobile:
+          link: /
+          name: Home
+      - $$ template header-button-mobile:
+          link: /tutorial/1-install.html
+          name: Tutorial
+      - $$ template header-button-mobile:
+          link: /about.html
+          name: About
+    - container:
+        content: ""
+        height: 5px
+        background-color: $$ param light-blue
+
+header:
+  - container (style mobileonly):
+    - $$ template header-mobile
+  - container (style desktoponly):
+    - $$ template header-desktop
+
 footer:
   - container:
       background-color: "#DDDDDD"
@@ -38,17 +72,19 @@ footer:
       - container (width 2/3) (offset 1/6) (padding 5px):
         - text: >
             [Home](/) &nbsp;
-            [Tutorial](/tutorial.html) &nbsp;
+            [Tutorial](/tutorial/1-installing.html) &nbsp;
             [About](/about.html)
         - text: >
-            [Open Source and Licensing](/license) &nbsp;
-            [Contact](kgarber.com/contact) &nbsp;
+            [Open Source and Licensing](#) &nbsp;
+            [Contact](#) &nbsp;
+            # [Open Source and Licensing](/oslic.html) &nbsp;
+            # [Contact](kgarber.com/contact.html) &nbsp;
             [Facebook](https://www.facebook.com/betterhtml/) &nbsp;
-            [Twitter](twitter.com/betterhtml)
+            # [Twitter](twitter.com/betterhtml)
         - text: >
             Created by Ken Garber. &nbsp;
-            [kgarber.com](kgarber.com). &nbsp;
-            [github.com/keng98](github.com/keng98).
+            [kgarber.com](http://kgarber.com) &nbsp;
+            [github.com/keng98](http://github.com/keng98)
 
 
 basic-page:
