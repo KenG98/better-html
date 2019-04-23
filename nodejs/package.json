@@ -1,6 +1,6 @@
 {
-  "name": "bhtml",
-  "version": "1.0.0",
+  "name": "better-html",
+  "version": "1.0.1",
   "description": "",
   "main": "bhcli.js",
   "bin": {
@@ -23,5 +23,10 @@
   "devDependencies": {
     "brfs": "^2.0.2",
     "browserify": "^16.2.3"
+  },
+  "homepage": "http://better-html.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KenG98/better-html.git"
   }
 }

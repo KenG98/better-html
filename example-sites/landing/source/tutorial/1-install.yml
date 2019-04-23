@@ -8,7 +8,7 @@ $$ template tutorial-page:
     - text-bold-200%: Install BetterHTML
     - Installing BetterHTML is easy. It's an NPM package, so first make sure you have Node.js installed. To do that, visit [nodejs.org](http://nodejs.org).
     - Once you have Node.js on your machine, run the command.
-    - code: npm install bhtml --global
+    - code: npm install better-html --global
     - To make sure everything worked, run the command to view the help menu.
     - code: bhtml --help
     - >
